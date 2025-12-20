@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compliment Pet 🐾</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <a href="#" class="logo">🐾 Compliment Pet</a>
+      </div>
+      <button class="nav-toggle" id="navToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li class="nav-item">
+          <a href="#app" class="nav-link active">App</a>
+        </li>
+        <li class="nav-item">
+          <a href="#how-it-works" class="nav-link">How It Works</a>
+        </li>
+        <li class="nav-item">
+          <a href="#tips" class="nav-link">Tips</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link">About</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title">Spread Kindness Daily 💖</h1>
+        <p class="hero-subtitle">Give your virtual pet compliments and watch it thrive. Build streaks, unlock
+          achievements, and discover the power of positive words!</p>
+        <div class="hero-buttons">
+          <a href="#app" class="hero-btn primary-btn">Start Now 🚀</a>
+          <a href="#how-it-works" class="hero-btn secondary-btn">Learn More 📖</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <svg class="hero-pet" viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg">
+          <!-- Pet Body -->
+          <circle cx="100" cy="120" r="60" fill="#ff6b9d" filter="url(#shadow)" />
+
+          <!-- Pet Head -->
+          <circle cx="100" cy="50" r="50" fill="#ff6b9d" filter="url(#shadow)" />
+
+          <!-- Left Ear -->
+          <circle cx="65" cy="15" r="18" fill="#ff6b9d" />
+          <circle cx="65" cy="18" r="10" fill="#ffb3d9" />
+
+          <!-- Right Ear -->
+          <circle cx="135" cy="15" r="18" fill="#ff6b9d" />
+          <circle cx="135" cy="18" r="10" fill="#ffb3d9" />
+
+          <!-- Eyes -->
+          <circle cx="80" cy="40" r="8" fill="#1a1a2e" />
+          <circle cx="120" cy="40" r="8" fill="#1a1a2e" />
+
+          <!-- Eye highlights -->
+          <circle cx="82" cy="38" r="3" fill="white" />
+          <circle cx="122" cy="38" r="3" fill="white" />
+
+          <!-- Smile -->
+          <path d="M 85 55 Q 100 65 115 55" stroke="#1a1a2e" stroke-width="2" fill="none" stroke-linecap="round" />
+
+          <!-- Blush -->
+          <circle cx="60" cy="50" r="8" fill="#ff9bb5" opacity="0.6" />
+          <circle cx="140" cy="50" r="8" fill="#ff9bb5" opacity="0.6" />
+
+          <!-- Left Arm -->
+          <rect x="35" y="100" width="20" height="50" rx="10" fill="#ff6b9d" transform="rotate(-25 45 100)" />
+
+          <!-- Right Arm -->
+          <rect x="145" y="100" width="20" height="50" rx="10" fill="#ff6b9d" transform="rotate(25 155 100)" />
+
+          <!-- Left Foot -->
+          <ellipse cx="75" cy="175" rx="15" ry="18" fill="#ff6b9d" />
+          <circle cx="70" cy="188" r="6" fill="#ffb3d9" />
+          <circle cx="75" cy="192" r="5" fill="#ffb3d9" />
+          <circle cx="80" cy="188" r="6" fill="#ffb3d9" />
+
+          <!-- Right Foot -->
+          <ellipse cx="125" cy="175" rx="15" ry="18" fill="#ff6b9d" />
+          <circle cx="120" cy="188" r="6" fill="#ffb3d9" />
+          <circle cx="125" cy="192" r="5" fill="#ffb3d9" />
+          <circle cx="130" cy="188" r="6" fill="#ffb3d9" />
+
+          <!-- Heart on chest -->
+          <path
+            d="M 100 110 L 105 100 Q 108 97 111 100 L 116 110 Q 100 120 100 128 Q 100 120 84 110 L 89 100 Q 92 97 95 100 Z"
+            fill="#ffd93d" />
+
+          <!-- Shadow filter -->
+          <defs>
+            <filter id="shadow">
+              <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.3" />
+            </filter>
+          </defs>
+        </svg>
+        <div class="pet-particles">
+          <span>💖</span>
+          <span>✨</span>
+          <span>🌟</span>
+          <span>💜</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <span class="hero-stat-number">∞</span>
+        <span class="hero-stat-label">Kindness Counts</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-number">🔥</span>
+        <span class="hero-stat-label">Build Streaks</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-number">🏆</span>
+        <span class="hero-stat-label">Earn Badges</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <!-- Header -->
+    <div class="header" id="app">
+      <div class="header-content">
+        <h1 class="header-title">
+          <span class="title-icon">🐾</span>
+          <span class="title-text">Compliment Pet</span>
+          <span class="title-icon">🐾</span>
+        </h1>
+        <p class="tagline">Show some love, keep them happy!</p>
+        <div class="header-badge">Your Daily Kindness Companion</div>
+      </div>
+    </div>
+
+    <!-- Settings Bar -->
+    <div class="settings-bar">
+      <button class="setting-btn" id="soundToggle" title="Toggle sound effects">
+        <span class="sound-icon">🔊</span>
+      </button>
+      <button class="setting-btn" id="themeToggle" title="Toggle dark/light mode">
+        <span class="theme-icon">🌙</span>
+      </button>
+      <button class="setting-btn" id="historyBtn" title="View compliment history">
+        <span>📋</span>
+      </button>
+      <button class="setting-btn" id="statsBtn" title="View your stats">
+        <span>📊</span>
+      </button>
+    </div>
+
+    <!-- Main Card -->
+    <div class="pet-card">
+      <!-- Pet Display with Leveling -->
+      <div class="pet-container">
+        <div class="pet-level" id="petLevel">Level 1</div>
+        <div class="pet" id="pet">😊</div>
+        <div class="pet-mood" id="petMood">Happy! Keep it up!</div>
+        <div class="pet-exp-bar">
+          <div class="pet-exp-fill" id="petExpFill"></div>
+        </div>
+      </div>
+
+      <!-- Pet Skin Selector -->
+      <div class="pet-skins">
+        <button class="skin-btn active" data-skin="😊" title="Default">😊</button>
+        <button class="skin-btn" data-skin="🐱" title="Cat">🐱</button>
+        <button class="skin-btn" data-skin="🐶" title="Dog">🐶</button>
+        <button class="skin-btn" data-skin="🐰" title="Bunny">🐰</button>
+        <button class="skin-btn" data-skin="🦊" title="Fox">🦊</button>
+        <button class="skin-btn" data-skin="🐻" title="Bear">🐻</button>
+      </div>
+
+      <!-- Stats Display -->
+      <div class="stats-display">
+        <div class="stat-item">
+          <span class="stat-label">Total</span>
+          <span class="stat-value" id="totalCompliments">0</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Streak</span>
+          <span class="stat-value" id="currentStreak">0</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Best</span>
+          <span class="stat-value" id="bestStreak">0</span>
+        </div>
+      </div>
+
+      <!-- Achievements Section -->
+      <div class="achievements-section">
+        <div class="achievements-header">
+          <h3 class="achievements-title">
+            <span class="achievement-icon">🏆</span>
+            <span>Achievements</span>
+            <span class="achievement-badge" id="achievementCount">0/6</span>
+          </h3>
+          <p class="achievements-subtitle">Unlock badges by spreading kindness</p>
+        </div>
+        <div class="achievements-grid" id="achievementsGrid"></div>
+      </div>
+
+      <!-- Status Text -->
+      <div class="status-box">
+        <p id="statusText">Your pet needs one compliment today. Be kind!</p>
+      </div>
+
+      <!-- Quick Suggestions -->
+      <div class="suggestions-box">
+        <button class="suggestion-btn" id="randomComplimentBtn">💡 Get Inspired</button>
+        <button class="suggestion-btn" id="templatesBtn">✍️ Templates</button>
+      </div>
+
+      <!-- Compliment Input Section -->
+      <div class="input-section">
+        <div class="input-wrapper">
+          <input type="text" id="complimentInput" class="compliment-input"
+            placeholder="Write a compliment (at least 10 characters)..." maxlength="200">
+          <button class="emoji-picker-btn" id="emojiPickerBtn" title="Add emoji">😊</button>
+        </div>
+        <div class="char-counter">
+          <span id="charCount">0</span>/200
+        </div>
+      </div>
+
+      <!-- Button -->
+      <button id="complimentBtn" class="compliment-btn">
+        Give Compliment 💖
+      </button>
+
+      <!-- Pet Response -->
+      <div class="pet-response" id="petResponse"></div>
+
+      <!-- Helper Text -->
+      <p class="helper-text">
+        ✨ One compliment per day keeps the sad away. Your pet remembers the last kind words you said!
+      </p>
+
+      <!-- Last Compliment -->
+      <div class="last-compliment">
+        <p class="last-compliment-label">Last compliment:</p>
+        <p class="last-compliment-text" id="lastCompliment">No compliments yet. Be the first!</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- History Modal -->
+  <div class="modal" id="historyModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>📋 Compliment History</h2>
+        <button class="modal-close" id="historyClose">&times;</button>
+      </div>
+      <div class="modal-body" id="historyList"></div>
+      <div class="modal-footer">
+        <button class="modal-btn export-btn" id="exportBtn">📥 Export as JSON</button>
+        <button class="modal-btn delete-btn" id="clearHistoryBtn">🗑️ Clear All</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats Modal -->
+  <div class="modal" id="statsModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>📊 Your Statistics</h2>
+        <button class="modal-close" id="statsClose">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon">💬</div>
+            <div class="stat-title">Total Compliments</div>
+            <div class="stat-big" id="statsTotalCompliments">0</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">🔥</div>
+            <div class="stat-title">Current Streak</div>
+            <div class="stat-big" id="statsCurrentStreak">0</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">🏆</div>
+            <div class="stat-title">Best Streak</div>
+            <div class="stat-big" id="statsBestStreak">0</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">📈</div>
+            <div class="stat-title">This Week</div>
+            <div class="stat-big" id="statsThisWeek">0</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Templates Modal -->
+  <div class="modal" id="templatesModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>✍️ Compliment Templates</h2>
+        <button class="modal-close" id="templatesClose">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="templates-list" id="templatesList"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast"></div>
+
+  <!-- Confetti Canvas -->
+  <canvas id="confetti"></canvas>
+
+  <!-- How It Works Section -->
+  <section class="info-section" id="how-it-works">
+    <div class="container">
+      <h2 class="section-title">How It Works 🤔</h2>
+      <div class="info-grid">
+        <div class="info-card">
+          <div class="info-icon">📝</div>
+          <h3>Write a Compliment</h3>
+          <p>Share something kind about yourself or someone else. Be genuine and heartfelt!</p>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">💖</div>
+          <h3>Make Your Pet Happy</h3>
+          <p>Give your pet at least one compliment per day to keep them smiling and content.</p>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">🔥</div>
+          <h3>Build Your Streak</h3>
+          <p>Keep complimenting daily to build an amazing streak! Don't break the chain!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tips Section -->
+  <section class="info-section tips-section" id="tips">
+    <div class="container">
+      <h2 class="section-title">💡 Compliment Tips</h2>
+      <div class="tips-list">
+        <div class="tip-item">
+          <span class="tip-number">1</span>
+          <p>Be specific! Instead of "you're nice," try "your creativity inspires me"</p>
+        </div>
+        <div class="tip-item">
+          <span class="tip-number">2</span>
+          <p>Compliment yourself too! Self-love is important for mental health</p>
+        </div>
+        <div class="tip-item">
+          <span class="tip-number">3</span>
+          <p>Focus on effort and character, not just appearance</p>
+        </div>
+        <div class="tip-item">
+          <span class="tip-number">4</span>
+          <p>Make compliments genuine—people can tell when you're being sincere</p>
+        </div>
+        <div class="tip-item">
+          <span class="tip-number">5</span>
+          <p>Share daily! Consistency builds streaks and happiness</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="info-section about-section" id="about">
+    <div class="container">
+      <h2 class="section-title">About 🌟</h2>
+      <div class="about-content">
+        <p>
+          <strong>Compliment Pet</strong> is a playful web app designed to encourage kindness and positivity in your
+          daily life.
+          Built with the spirit of Hack Club, it combines fun gamification with genuine wellness benefits.
+        </p>
+        <p>
+          The idea is simple: taking care of your pet mirrors taking care of yourself and others.
+          One kind word a day keeps the sadness away! 💜
+        </p>
+        <div class="about-features">
+          <h3>Features:</h3>
+          <ul>
+            <li>✨ Track your daily compliments</li>
+            <li>🔥 Build and maintain streaks</li>
+            <li>😊 Watch your pet's mood change</li>
+            <li>💾 All data saved locally (no tracking!)</li>
+            <li>🎨 Beautiful, playful design</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Made with 💜 | Built with Hack Club spirit</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
