@@ -169,7 +169,7 @@
       <!-- Pet Display with Leveling -->
       <div class="pet-container">
         <div class="pet-level" id="petLevel">Level 1</div>
-        <div class="pet" id="pet">😊</div>
+        <div class="pet" id="pet" role="img" aria-label="Your virtual pet">😊</div>
         <div class="pet-mood" id="petMood">Happy! Keep it up!</div>
         <div class="pet-exp-bar">
           <div class="pet-exp-fill" id="petExpFill"></div>
@@ -178,12 +178,12 @@
 
       <!-- Pet Skin Selector -->
       <div class="pet-skins">
-        <button class="skin-btn active" data-skin="😊" title="Default">😊</button>
-        <button class="skin-btn" data-skin="🐱" title="Cat">🐱</button>
-        <button class="skin-btn" data-skin="🐶" title="Dog">🐶</button>
-        <button class="skin-btn" data-skin="🐰" title="Bunny">🐰</button>
-        <button class="skin-btn" data-skin="🦊" title="Fox">🦊</button>
-        <button class="skin-btn" data-skin="🐻" title="Bear">🐻</button>
+        <button class="skin-btn active" data-skin="😊" title="Default" aria-label="Default pet skin">😊</button>
+        <button class="skin-btn" data-skin="🐱" title="Cat" aria-label="Cat pet skin">🐱</button>
+        <button class="skin-btn" data-skin="🐶" title="Dog" aria-label="Dog pet skin">🐶</button>
+        <button class="skin-btn" data-skin="🐰" title="Bunny" aria-label="Bunny pet skin">🐰</button>
+        <button class="skin-btn" data-skin="🦊" title="Fox" aria-label="Fox pet skin">🦊</button>
+        <button class="skin-btn" data-skin="🐻" title="Bear" aria-label="Bear pet skin">🐻</button>
       </div>
 
       <!-- Stats Display -->
@@ -222,16 +222,17 @@
 
       <!-- Quick Suggestions -->
       <div class="suggestions-box">
-        <button class="suggestion-btn" id="randomComplimentBtn">💡 Get Inspired</button>
-        <button class="suggestion-btn" id="templatesBtn">✍️ Templates</button>
+        <button class="suggestion-btn" id="randomComplimentBtn" aria-label="Get a random compliment idea">💡 Get
+          Inspired</button>
+        <button class="suggestion-btn" id="templatesBtn" aria-label="Show compliment templates">✍️ Templates</button>
       </div>
 
       <!-- Compliment Input Section -->
       <div class="input-section">
         <div class="input-wrapper">
           <input type="text" id="complimentInput" class="compliment-input"
-            placeholder="Write a compliment (at least 10 characters)..." maxlength="200">
-          <button class="emoji-picker-btn" id="emojiPickerBtn" title="Add emoji">😊</button>
+            placeholder="Write a compliment (at least 10 characters)..." maxlength="200" aria-label="Compliment input">
+          <button class="emoji-picker-btn" id="emojiPickerBtn" title="Add emoji" aria-label="Add emoji">😊</button>
         </div>
         <div class="char-counter">
           <span id="charCount">0</span>/200
@@ -239,7 +240,7 @@
       </div>
 
       <!-- Button -->
-      <button id="complimentBtn" class="compliment-btn">
+      <button id="complimentBtn" class="compliment-btn" aria-label="Submit compliment">
         Give Compliment 💖
       </button>
 
@@ -322,7 +323,7 @@
   </div>
 
   <!-- Toast Notification -->
-  <div class="toast" id="toast"></div>
+  <div class="toast" id="toast" aria-live="polite" aria-atomic="true"></div>
 
   <!-- Confetti Canvas -->
   <canvas id="confetti"></canvas>
@@ -413,7 +414,8 @@
     <p>Made with 💜 | Built with Hack Club spirit</p>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- Modular JavaScript (ES6 modules) -->
+  <script type="module" src="js/main.js"></script>
 </body>
 
 </html>
